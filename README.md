@@ -19,4 +19,6 @@ The MACRO's in the `smart_grid/include/constants.h` file specifies the configura
 
 - Configure the CA Certificate using the macro `CA_CERT`.
 
+- Update the variables `protocol` and `use_tls` in the `main` function to choose the protocol to be used and whether or not to use their secure versions.
+
 - Make note of the macro `MQTT_OUTPUT_RINGBUF_SIZE` in `smart_grid/include/lwipopts.h`. It is the maximum number of bytes of the MQTT packet data. As per documentation it should be a power of 2. It is set to 2048 for MQTT. The same should work for MQTTS too but it is working with 512.
